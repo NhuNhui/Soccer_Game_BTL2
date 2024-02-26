@@ -1,0 +1,8 @@
+﻿  Main.cpp
+D:\HK232\Game\BTL2\Soccer_Game\Soccer_Game\BackGround.h(19,88): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+D:\HK232\Game\BTL2\Soccer_Game\Soccer_Game\BackGround.h(19,66): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+  Soccer_Game.vcxproj -> D:\HK232\Game\BTL2\Soccer_Game\Debug\Soccer_Game.exe
