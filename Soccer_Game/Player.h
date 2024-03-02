@@ -10,6 +10,8 @@ private:
     SDL_Renderer* renderer;
 
 public:
+    
+
     Player(SDL_Renderer* rend, int xPos, int yPos, int r) : renderer(rend), x(xPos), y(yPos), radius(r) {}
 
     void drawRed() {
@@ -39,8 +41,25 @@ public:
     }
 
     void move(int dx, int dy) {
-        x += dx;
-        y += dy;
+        if(x + dx > 75 && x + dx < 1125)
+            x += dx;
+        if(y + dy > 65 && y + dy < 610)
+            y += dy;
+    }
+
+    void set_x(int x) {
+        this->x = x;
+    }
+
+    int get_x() {
+        return this->x;
+    }
+
+    void set_y(int y) {
+        this->y = y;
+    }
+    int get_y() {
+        return this->y;
     }
 };
 

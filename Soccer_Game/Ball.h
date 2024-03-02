@@ -10,7 +10,7 @@ private:
     int x, y, width, height;
 
 public:
-    Ball(SDL_Renderer* renderer, const char* imagePath, int x, int y) {
+     Ball(SDL_Renderer* renderer, const char* imagePath, int x, int y) {
         surface = IMG_Load(imagePath);
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         this->x = x;
@@ -28,6 +28,23 @@ public:
     void draw(SDL_Renderer* renderer) {
         SDL_Rect destRect = { x, y, 40, 40 };
         SDL_RenderCopy(renderer, texture, NULL, &destRect);
+    }
+
+    void set_x(int x) {
+        this->x = x;
+    }
+
+    int get_x() {
+        return this->x + 20;
+    }
+
+    void set_y(int y) {
+
+        this->y = y;
+    }
+
+    int get_y() {
+        return this->y + 20;
     }
 
 };

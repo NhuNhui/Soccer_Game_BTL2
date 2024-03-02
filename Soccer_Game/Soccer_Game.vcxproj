@@ -82,7 +82,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;SDL2test.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -139,8 +139,11 @@
     <ClInclude Include="BackGround.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="fulltime.h" />
+    <ClInclude Include="Goal.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Score.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
